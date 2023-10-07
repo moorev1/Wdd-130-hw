@@ -17,14 +17,14 @@ header {
 
 footer {
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
     padding: 10px;
 }
 
 /* Centering elements */
 nav a {
     text-align: center;
-    color: #333;
+    color: #bcc0cc;
     text-decoration: none;
 }
 
@@ -48,7 +48,7 @@ main section {
 
 #background {
     height: 725px;
-    background-color: #e6e6e6;
+    background-color: #dfeaee;
 }
 
 /* Additional Styles for the provided HTML elements */
@@ -68,7 +68,6 @@ main section {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
 }
 
 #hero-img {
@@ -77,15 +76,15 @@ main section {
 
 .msg {
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #555;
 }
 
 .msg h2 {
-    color: #007BFF;
+   color: #f7f8f6;
 }
 
 .msg p {
-    color: #555;
+    color: #fafaf5;
 }
 
 .book,
@@ -107,7 +106,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #d9c2a3;
+    color: #070503;
 }
 
 /* Larger font size for footer text */
@@ -115,7 +114,7 @@ footer p {
     font-size: 1.2em;
 }
 
-/* Underline on hover for footer p a */
 footer p a:hover {
     text-decoration: underline;
-}
+}    
+           
