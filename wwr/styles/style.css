@@ -9,25 +9,21 @@ body {
     max-width: 1600px;
     padding: 20px;
 }
-
 header {
     background-color: rgba(20, 30, 13, 0.7);
     padding: 10px;
 }
-
 footer {
     background-color: #333;
     color: #ffffff;
     padding: 10px;
 }
-
 /* Centering elements */
 nav a {
     text-align: center;
     color: #bcc0cc;
     text-decoration: none;
 }
-
 nav a:hover {
     background-color: black;
     color: #d9c2a3;
@@ -37,7 +33,6 @@ nav a:hover {
 #hero-msg h4 {
     text-align: center;
 }
-
 .button-box {
     text-align: center;
 }
