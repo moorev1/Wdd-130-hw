@@ -55,27 +55,20 @@
 
 .green2.box {
   background-color: green;
-  position: relative;
-  z-index: 1000;
-  margin-left: -2ex; /* Adjusted margin-left */
-  margin-top: -4ex; /* Adjusted margin-top */
+  margin-left: -2ex;
+  margin-top: -4ex;
 }
 
 .yellow2.box {
   background-color: gold;
-  position: relative;
-  z-index: 1000;
-  margin-top: -3ex; /* Adjusted margin-top */
+  margin-top: -3ex;
 }
 
 .blue2.box {
   background-color: blue;
-  position: relative;
-  z-index: 1000;
-  margin-left: 2ex; /* Adjusted margin-left */
-  margin-top: -4ex; /* Adjusted margin-top */
+  margin-left: 2ex;
+  margin-top: -4ex;
 }
-
 
 /* ... (Rest of your existing styles) */
 .content3 {
@@ -178,13 +171,13 @@
 }
 
 .red5 {
-  width: 300%;
+  width: 100%;
   height: 100px;
   background-color: red;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 3; /* Set a higher z-index for the red box to appear on top */
+  z-index: 3;
 }
 
 .yellow5 {
@@ -207,49 +200,57 @@
 }
 
 .blue5 {
-  width: 100%;
-  height: 100px;
-  background-color: blue;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-bottom: -50px; /* Adjusted margin to bring the blue box down */
+    width: 100%; 
+    height: 100px;  
+    background-color: blue; 
+    grid-column: 1/3;
+    border: none; /* Set border to none */
 }
 
-/* Clearfix to prevent layout issues with floated elements */
-.content5::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-
-/* Activity 6 styles */ 
 .content6 {
-  /* This is the parent of the activity 6 boxes. */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 400px; /* Adjust the height as needed */
 }
+
 .red6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
-.green6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
-} 
-.yellow6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
+  width: 250px;
+  height: 150px;
+  background-color: red;
+}
+
 .blue6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-} 
+  width: 250px;
+  height: 330px;
+  background-color: blue;
+  margin-top: 50px; /* Adjust the margin-top to move the blue box down */
+  margin-left: 50px; /* Move the blue box to the right */
+}
+
+.green6 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-left: -150px; /* Shift the green box to the left side of the blue box */
+  margin-top: auto; /* Move the green box down */
+  position: relative;
+  z-index: 1; /* Set a higher z-index for the green box to bring it on top */
+}
+
+.yellow6 {
+  width: 250px;
+  height: 300px;
+  background-color: gold;
+  position: relative;
+  top: 80px; /* Adjust the top value to drop the yellow box down further */
+  z-index: 0; /* Set a lower z-index for the yellow box */
+}
+
+
+
+
+
 
 
 /* Do not make any changes below here */
