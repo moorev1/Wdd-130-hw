@@ -1,4 +1,4 @@
-/* Font Import */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Sofia+Sans+Extra+Condensed:wght@600&display=swap');
 body {
     background-color: #fcfbfb;
@@ -224,8 +224,8 @@ main section {
 }
 
 .msg {
-    grid-column: 3/6; /* Adjusted grid placement to 3-6 columns */
-    grid-row: 6/8; /* Adjusted grid placement to 6-8 rows */
+    grid-column: 3/6;
+    grid-row: 6/8;
     background-color: #6f7364;
     padding: 35px;
     box-shadow: 5px 5px 10px #6f7364;
@@ -262,11 +262,9 @@ footer .social img {
     padding-top: 15px;
 }
 
-/* Custom Styles for Font Choices */
 .home-title,
 .msg h2 {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    /* Backup Fonts */
     font-family: 'Arial', sans-serif;
 }
 @media screen and (max-width: 900px) {
