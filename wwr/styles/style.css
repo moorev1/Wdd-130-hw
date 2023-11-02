@@ -75,9 +75,8 @@ nav a {
     justify-content: space-around;
 }
 
-/* Add the following styles for the "Contact Us" link */
 nav .contact-us {
-    margin-left: auto; /* Pushes it to the right */
+    margin-left: auto; 
     color: #bcc0cc;
     text-decoration: none;
     padding: 35px;
@@ -270,7 +269,7 @@ footer a, footer p {
     color: #fff;
     text-decoration: none;
     display: block;
-    line-height: 30px; /* Adjust the line-height based on your container height */
+    line-height: 30px; 
 }
 
 
