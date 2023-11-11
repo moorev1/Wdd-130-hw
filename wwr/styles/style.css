@@ -271,10 +271,7 @@ footer a, footer p {
     display: block;
     line-height: 30px; 
 }
-/* Your existing styles for the home page */
-
 /* Styles for the Rivers Rafting subpage */
-/* Add any additional styles for the new page here */
 
 /* Start of new page styles */
 section {
@@ -286,33 +283,28 @@ section img {
     width: 100%;
     max-width: 100%;
     height: auto;
-    display: block; /* Remove any extra space below the image */
-    margin: 0 auto; /* Center the image within its container */
+    display: block; 
+    margin: 0 auto; 
 }
 
-/* Additional styles for better readability */
 section h2 {
-    color: #3e5c76; /* Adjust color as needed */
-    font-size: 1.5em; /* Example font size adjustment */
+    color: #3e5c76; 
+    font-size: 1.5em; 
 }
 
 section p {
-    font-family: 'Roboto', sans-serif; /* Use the correct font-family property */
-    color: #748cab; /* Adjust color as needed */
+    font-family: 'Roboto', sans-serif; 
+    color: #748cab; 
 }
-
-/* Set width to 100% for elements with class card-img or mountains */
 .card-img, .mountains {
     width: 100%;
 }
 
-/* Display grid with 10 equal columns */
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
 
-/* Style for rivers-card */
 .rivers-card,
 .camping-card,
 .rapids-card {
@@ -320,14 +312,11 @@ section p {
     margin: 50px auto;
     width: 60%;
 }
-
-/* Style for background element with ID background */
 #background {
     grid-column: 1/11;
     grid-row: 4/9;
 }
 
-/* Styling for elements with class card-img */
 .card-img {
     border: 10px solid #d9c2a3;
     transition: transform .5s;
