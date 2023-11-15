@@ -322,6 +322,19 @@ section p {
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
 }
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
 
   /* End of new page styles */
 
