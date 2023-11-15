@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+<body>
+    <header>
+        <nav>
+            <a id="active" href="http://index.html">Home</a>             
+            <a href="wwr/index.html">White Water Rafting Website</a>
+            <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
+            <a href="positioning.html">Positioning Activity</a>
+            <a href="personal website">Personal Website</a>
+            <a href="siteplan">Personal Siteplan</a>
+        </nav>  
+    </header>
+    <main>
+        <div id="feedback"></div> <!-- This is the feedback div for displaying success message -->
+        
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="Submit">
+                </li>
+                <!-- For other form fields -->
+            </ul>
+        </form>
+    </main>
+    <footer>
+        <p>My Web Page 2023 &copy</p>
+    </footer>
+    <div class="container">
+        <h1>About Me - Vincent Moore</h1>
+        <img src="images/vincent.jpeg" alt="Vincent Moore's photo" style="max-width: 200px;">
+        <p>
+            My name is Vincent Moore, and I am from the western part of Ghana. I've been happily married for two years now to my wonderful spouse, and we are blessed with a beautiful 11-month-old daughter named Zara. I currently work as a warehouse supervisor in a lighting shop.
+        </p>
+        <p>
+            I'm also pursuing my education, majoring in applied technology, and I'm working towards a Bachelor of Science (BS) degree. In my free time, I enjoy spending quality time with my family, and I believe that we are all here to support and get to know each other as a larger family. Let's connect and learn more about each other's stories and experiences.
+        </p>
+        <p>Thank you for visiting my page!</p>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
