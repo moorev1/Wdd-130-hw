@@ -1,26 +1,34 @@
-/* default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Sofia+Sans+Extra+Condensed:wght@600&display=swap');
 
 body {
-    font-family: 'Lato', Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
+    font-family: 'Roboto', 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfbfb;
 }
 
 /* Navigation styles */
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2em; /* Use em or rem for better responsiveness */
+}
+
 nav {
-    background-color: #D4AC0D;
+    background-color: #3a4f41;
     padding: 1em;
 }
 
 nav a {
     text-decoration: none;
-    color: #396E94;
-    margin-right: 50px;
+    color: #fcfbfb;
+    margin-right: 2em; /* Use em or rem for better responsiveness */
 }
 
 nav .logo {
@@ -29,22 +37,14 @@ nav .logo {
 
 /* Header styles */
 header {
-
-    color: rgb(20, 67, 100); 
-    padding: 1em; 
-    text-align: center; 
+    color: rgb(20, 67, 100);
+    padding: 1em;
+    text-align: center;
 }
 
 header h1 {
     font-size: 24px; /* font size for the heading */
-}
-
-/* more styles for future */
-
-
-#home1-box img {
-    width: 100%;
-    height: auto; 
+    font-family: 'Roboto';
 }
 
 /* Main Content styles */
@@ -52,13 +52,38 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2em;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-align: center;
 }
 
-.recipes-section {
-    background-color: #f7f9fc; 
-    padding: 2em; 
+#home1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home1-box {
+    width: 100vw; /* Set the width of the container to the viewport width */
+    height: 100%;
+    overflow: hidden;
+}
+
+#home1-box img {
     width: 100%;
-    min-height: 100vh; 
+    height: 100%;
+    object-fit: cover; /* Cover the container without distorting the image */
+    object-position: center; /* Center the image within the container */
+}
+
+
+
+
+.recipes-section {
+    background-color: #E1DEE3;
+    padding: 2em;
+    margin-left: -7em; /* Compensate for the left padding */
+    margin-right: -7em; /* Compensate for the right padding */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -70,7 +95,7 @@ main {
 .recipe-header {
     font-size: 2em;
     margin-bottom: 1em;
-    color: #333; 
+    color: #333;
 }
 
 .image-container {
@@ -84,7 +109,7 @@ main {
     width: 30%;
     margin: 10px;
     padding: 15px;
-    background-color: #fff;
+    background-color: #3a4f41;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
@@ -103,8 +128,38 @@ main {
     margin-top: 10px;
     color: #666;
 }
+/* Existing styles... */
 
-/*  more styles will be added */
+/* Additional styles for chef containers */
+.chef-container,
+.chef-container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chef-info,
+.chef-info2 {
+    max-width: 400px;
+    text-align: center;
+}
+
+.chef-info p,
+.chef-info2 p {
+    margin: 0;
+}
+
+.chef-container img,
+.chef-container2 img {
+    width: 600px; /* Increase the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px; /* Optional: add a border-radius for a nicer look */
+}
+
+/* Responsive styles... */
+
 
 .left-box,
 .right-box {
@@ -113,7 +168,7 @@ main {
 }
 
 .center-box {
-    margin: 0 100px;
+    margin: 0 10%; /* Adjust as needed */
     overflow: hidden;
 }
 
@@ -134,16 +189,14 @@ main {
     padding: 10px;
 }
 
-/* more styles will be added */
-
 /* Join Us button styles */
-section:nth-child(3) {
+.join-us-section {
     text-align: center;
     margin-top: 1em;
 }
 
 button.join-us-button {
-    background-color: #A42212;
+    background-color: #3a4f41;
     color: white;
     padding: 10px 20px;
     font-size: 1em;
@@ -152,16 +205,16 @@ button.join-us-button {
 }
 
 /* Wireframes section styles */
-section:nth-child(4) {
+.section-wireframes {
     text-align: center;
     margin: 2em 0;
 }
 
 /* Featured Recipes section styles */
-section:nth-child(5) {
+.featured-recipes-section {
     padding: 2em;
-    background-color: #E7C24F;
-    color: #396E94;
+    background-color: #55d6be;
+    color: #429ab4;
 }
 
 .recipe-container {
@@ -170,48 +223,11 @@ section:nth-child(5) {
     justify-content: space-around;
 }
 
-.recipe-card {
-    width: 30%;
-    margin: 10px;
-    padding: 15px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.recipe-card img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
 /* Testimonials section styles */
-section:nth-child(6) {
-    background-color: #4e95e7;
-    color: white;
+.testimonials-section {
+    background-color: #889ec7;
+    color: black;
     padding: 2em;
-}
-
-.join-us-section {
-    text-align: center;
-    background-color: #f2f2f2; 
-    padding: 20px; 
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.join-us-button {
-    /* Added button styling */
-    background-color: #65a0ee; /*  button background color */
-    color: white; /*  button text color */
-    padding: 10px 20px; /*  padding for the button */
-    border: none;
-    border-radius: 5px; /* border radius */
-    cursor: pointer;
 }
 
 .testimonial-container {
@@ -225,21 +241,36 @@ section:nth-child(6) {
     width: 45%;
     margin: 10px;
     padding: 15px;
-    background-color: white;
+    background-color: #e1dee3;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer styles */
 footer {
-    background-color: #D4AC0D;
+    display: flex;
+    justify-content: space-around;
+    background-color: #3a4f41;
     color: white;
     text-align: center;
+    flex-wrap: wrap;
     padding: 1em;
+}
+
+footer p {
+    margin: 0;
 }
 
 footer a {
     color: white;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    margin-right: 10px;
 }
 
 .social img {
@@ -253,11 +284,13 @@ footer a {
         padding: 1em;
     }
 
-    .recipe-container, .testimonial-container {
+    .recipe-container,
+    .testimonial-container {
         flex-direction: column;
     }
 
-    .recipe-card, .testimonial-card {
+    .recipe-card,
+    .testimonial-card {
         width: 100%;
     }
 }
