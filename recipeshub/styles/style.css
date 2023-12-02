@@ -91,6 +91,10 @@ main {
     justify-content: center;
     text-align: center;
 }
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
 
 .recipe-header {
     font-size: 2em;
