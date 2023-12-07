@@ -1,13 +1,94 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Sofia+Sans+Extra+Condensed:wght@600&display=swap');
 
+/* General Styles */
 body {
     font-family: 'Roboto', 'Sofia Sans Extra Condensed', sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
     background-color: #e1dee3;
+    color: #333;
 }
+
+main {
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+    color: #333;
+}
+
+/* Message Box Styles */
+.elvis-msg-container,
+.brooke-msg-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.newsletter {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.newsletter form {
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: #3a4f41;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.elvis,
+.brook {
+    width: 400px;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 8px;
+}
+
+.msg,
+.msg-brooke {
+    flex: 1;
+    width: 30%;
+    box-shadow: 5px 5px 10px #6f7364;
+    background-color: #d5a18e;
+    color: #fff;
+    padding: 35px;
+    text-align: left;
+    border-radius: 8px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Hover Effect for Links */
+a:hover {
+    color: #429ab4;
+}
+
+/* ... (existing styles) ... */
 
 /* Navigation styles */
 .navigation {
@@ -17,7 +98,7 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 2em; /* Use em or rem for better responsiveness */
+    gap: 2em;
 }
 
 nav {
@@ -28,7 +109,7 @@ nav {
 nav a {
     text-decoration: none;
     color: #fcfbfb;
-    margin-right: 2em; /* Use em or rem for better responsiveness */
+    margin-right: 2em;
 }
 
 nav .logo {
@@ -43,7 +124,7 @@ header {
 }
 
 header h1 {
-    font-size: 24px; /* font size for the heading */
+    font-size: 24px;
     font-family: 'Roboto';
 }
 
@@ -64,7 +145,7 @@ main {
 }
 
 #home1-box {
-    width: 100vw; /* Set the width of the container to the viewport width */
+    width: 100vw;
     height: 100%;
     overflow: hidden;
 }
@@ -72,18 +153,15 @@ main {
 #home1-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cover the container without distorting the image */
-    object-position: center; /* Center the image within the container */
+    object-fit: cover;
+    object-position: center;
 }
-
-
-
 
 .recipes-section {
     background-color: #E1DEE3;
     padding: 2em;
-    margin-left: -7em; /* Compensate for the left padding */
-    margin-right: -7em; /* Compensate for the right padding */
+    margin-left: -7em;
+    margin-right: -7em;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -91,10 +169,11 @@ main {
     justify-content: center;
     text-align: center;
 }
+
 .topnav {
     background-color: #333;
     overflow: hidden;
-  }
+}
 
 .recipe-header {
     font-size: 2em;
@@ -132,9 +211,7 @@ main {
     margin-top: 10px;
     color: #666;
 }
-/* Existing styles... */
 
-/* Additional styles for chef containers */
 .chef-container,
 .chef-container2 {
     display: flex;
@@ -156,14 +233,13 @@ main {
 
 .chef-container img,
 .chef-container2 img {
-    width: 600px; /* Increase the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    border-radius: 10px; /* Optional: add a border-radius for a nicer look */
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* Responsive styles... */
-
 
 .left-box,
 .right-box {
@@ -172,7 +248,7 @@ main {
 }
 
 .center-box {
-    margin: 0 10%; /* Adjust as needed */
+    margin: 0 10%;
     overflow: hidden;
 }
 
@@ -186,14 +262,13 @@ main {
 .text-under-image {
     text-align: center;
     padding: 10px;
-    background-color: #ffffff; /*  background color  set */
+    background-color: #ffffff;
 }
 
 .text-box {
     padding: 10px;
 }
 
-/* Join Us button styles */
 .join-us-section {
     text-align: center;
     margin-top: 1em;
@@ -208,18 +283,58 @@ button.join-us-button {
     cursor: pointer;
 }
 
-/* Wireframes section styles */
 .section-wireframes {
     text-align: center;
     margin: 2em 0;
 }
 
-/* Featured Recipes section styles */
 .featured-recipes-section {
     padding: 2em;
     background-color: #55d6be;
     color: #429ab4;
 }
+/* Add this to your existing CSS file or in a new style block in the head */
+
+.join-us-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.join-us-section h2 {
+    font-size: 24px;
+}
+
+.join-us-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.join-us-button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .join-us-section {
+        padding: 10px;
+    }
+
+    .join-us-section h2 {
+        font-size: 20px;
+    }
+
+    .join-us-section p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .join-us-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
 
 .recipe-container {
     display: flex;
@@ -227,7 +342,6 @@ button.join-us-button {
     justify-content: space-around;
 }
 
-/* Testimonials section styles */
 .testimonials-section {
     background-color: #889ec7;
     color: black;
@@ -250,7 +364,6 @@ button.join-us-button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer styles */
 footer {
     display: flex;
     justify-content: space-around;
