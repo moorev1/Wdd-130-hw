@@ -5,56 +5,90 @@
     <meta charset="utf-8">
     <title>Recipes Hub</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-</head>
-<body>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Group 1: Navigation with Logo -->
-<!-- Group 1: Navigation with Logo -->
-<nav class="navigation">
-    <a href="index.html" class="nav-link"><img src="images/logo.PNG" alt="Logo image" class="logo"></a>
-    <div class="navbar">
-        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="recipes-galore.html"><i class="fa fa-fw fa-cutlery"></i> Recipe Haven</a>
-        <a href="foodie-tales.html"><i class="fa fa-fw fa-book"></i> Foodie Chronicles</a>
-        <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-    </div> 
-</nav>
-      </header>
-    </header>
+    <style>
+        /* Add any custom styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Add more styles as needed */
+        /* ... */
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="nav-link">
+            <img src="images/logo.PNG" alt="Logo image" class="logo">
+        </a>
+        <div class="nav-links">
+            <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="recipes-galore.html"><i class="fa fa-fw fa-cutlery"></i> Recipe Haven</a>
+            <a href="foodie-tales.html"><i class="fa fa-fw fa-book"></i> Foodie Chronicles</a>
+            <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+        </div>
+    </nav>
+
     <main>
-        <hr>
-        <h2>Content</h2>
-        <h3>Foodie Tales</h3>
-        <p>[Written copy for the Foodie Tales page here]</p>
-        <p>Images for the Foodie Tales page</p>
-        <img src="images/elvis.jpg" alt="image for page3">
-        <img src="images/brooke.jpg" alt="image for page3">
-        <hr>
-        <h2>Wireframes</h2>
-        <h3>[Page 3]</h3>
-        <p>[Any additional details about Page 3 that the wireframe does not make clear]</p>
-        <img src="images/foodiewireframe.png" alt="page 3 wireframe">
+        <section class="intro-section">
+            <hr>
+            <h2>Welcome to Our Culinary Journey</h2>
+            <p>Explore the artistry of flavors and the richness of culinary tales in our Foodie Tales section. Immerse yourself
+                in a world where each dish tells a unique story, bringing you closer to the heart of gastronomy.</p>
+            <p>Discover the essence of our culinary experiences through captivating narratives and stunning visuals.</p>
+        </section>
+        
+
+        <div class="elvis-msg-container">
+            <img class="elvis" src="images/elvis.jpg" alt="Elvis image for page 3">
+            <section class="msg">
+                <h2>More Than Just The Thrill</h2>
+                <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just
+                    the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great
+                    outdoors. </p>
+            </section>
+        </div>
+
+        <div class="brooke-msg-container">
+            <section class="msg-brooke">
+                <h2>A Culinary Voyage by Chef Emily</h2>
+        <p>Join Chef Emily as she explores the art of gastronomy. From farm-to-table experiences to unique cooking
+            techniques, discover the secrets that make each dish a masterpiece.</p>
+            </section>
+            <img class="brook" src="images/brooke.jpg" alt="Brooke image for page 3">
+        </div>
+
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with the latest recipes and foodie tales.</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
     </main>
+
     <footer>
         <p>Recipe Hub &copy; 2023 - Vincent Moore</p>
-        <p><a href="site-plan.html">site plan</a></p>
+        <p><a href="site-plan.html">Site Plan</a></p>
         <p><a href="terms-and-services.html">Terms and Services</a></p>
-        <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a> 
+        <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
+                <img src="images/facebook.png" alt="Facebook icon">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
+                <img src="images/twitter.png" alt="Twitter icon">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
+                <img src="images/instagram.png" alt="Instagram icon">
             </a>
         </div>
     </footer>
-    
-    
-    </body>
-    
-    </html>
-    
+</body>
+
+</html>
