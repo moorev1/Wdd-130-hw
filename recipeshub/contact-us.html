@@ -5,33 +5,35 @@
     <meta charset="utf-8">
     <title>Recipes Hub - HOME</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Group 1: Navigation with Logo -->
-<!-- Group 1: Navigation with Logo -->
-<nav class="navigation">
-    <a href="index.html" class="nav-link"><img src="images/logo.PNG" alt="Logo image" class="logo"></a>
-    <div class="nav-links">
-        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="recipes-galore.html"><i class="fa fa-fw fa-cutlery"></i> Recipe Haven</a>
-        <a href="foodie-tales.html"><i class="fa fa-fw fa-book"></i> Foodie Chronicles</a>
-        <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-    </div>
-</nav>
-    <!-- Group 2: Header -->
+    <!-- Navigation -->
+    <nav class="navigation">
+        <a href="index.html" class="nav-link"><img src="images/logo.PNG" alt="Logo image" class="logo"></a>
+        <div class="nav-links">
+            <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="recipes-galore.html"><i class="fa fa-fw fa-cutlery"></i> Recipe Haven</a>
+            <a href="foodie-tales.html"><i class="fa fa-fw fa-book"></i> Foodie Chronicles</a>
+            <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
     <header>
         <div id="home1">
             <div id="home1-box">
-                <img src="images/home1.jpg" alt="home1 image for homepage">
+                <img src="images/home1.jpg" alt="home1 image" class="home1">
             </div>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main>
         <div id="feedback"></div> <!-- This is the feedback div for displaying success message -->
-        
+
         <form action="/my-handling-form-page" method="post">
             <ul>
                 <li>
@@ -53,40 +55,37 @@
             </ul>
         </form>
     </main>
+
+    <!-- Footer -->
     <footer>
-       <p>Recipe Hub &copy; 2023 - Vincent Moore</p>
-    <p><a href="images/homewireframe.PNG">site plan</a></p>
-    <p><a href="terms-and-services.html">Terms and Services</a></p>
-    <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a> 
-    <div class="social">
-        <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook.png" alt="fb icon">
-        </a>
-        <a href="https://twitter.com" target="_blank">
-            <img src="images/twitter.png" alt="twitter icon">
-        </a>
-        <a href="https://instagram.com" target="_blank">
-            <img src="images/instagram.png" alt="instagram icon">
-        </a>
-    </div>
+        <p>Recipe Hub &copy; 2023 - Vincent Moore</p>
+        <p><a href="images/homewireframe.PNG">Site Plan</a></p>
+        <p><a href="terms-and-services.html">Terms and Services</a></p>
+        <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
     </footer>
-   
+
+    <!-- Script for form submission -->
     <script>
-        // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
         const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
         formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
             e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back to you as soon as possible!';
             feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
             document.body.classList.toggle('moveDown');
         });
     </script>
 </body>
+
 </html>
